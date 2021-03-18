@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8JTvkLucRwbK9kk4ia3n1D-ji8I49JhjnoA&usqp=CAU"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alvezz</title>
+    <link type="text/css" rel="stylesheet" href="main.css"/>
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <div id="slideshow">
+        <div>
+          <img src="imagens/627625.jpg" style="width: 100%; height: 100%">
+        </div>
+        <div>
+          <img src="imagens/img2.png" style="width: 100%; height: 100%">
+        </div>
+        <div>
+          <img src="imagens/1047105.jpg" style="width: 100%; height: 100%">
+        </div>
+        <div>
+          <img src="imagens/bigman.jpg" style="width: 100%; height: 100%">
+        </div>
+        <div>
+          <img src="imagens/bonecoazul.jpg" style="width: 100%; height: 100%">
+        </div>
+    </div>
+
+
+
+    <div class="redesSociais">
+      <a href="https://www.instagram.com/alvezzyt_/" target="_blank"><img src="icones/instagram.png" style="width: 3vw; height: 5vh" alt="Conta no Instagram"/></a>
+      <a href="https://www.youtube.com/channel/UCL2F6QLlnwx2nTxHbDmm4Hw" target="_blank"><img src="icones/youtube.png" style="width: 3vw; height: 4vh" alt="Canal no Youtube"/></a>
+      <a href="https://www.tiktok.com/@alvezzyt?" target="_blank"><img src="icones/tiktok.png" style="width: 3vw; height: 5vh" alt="Tiktok"/></a>
+    </div>
+
+    <script>
+    $("#slideshow > div:gt(0)").hide();
+
+    setInterval(function() { 
+    $('#slideshow > div:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+    .appendTo('#slideshow');
+    }, 3500);
+    </script>
+</body>
+</html>
