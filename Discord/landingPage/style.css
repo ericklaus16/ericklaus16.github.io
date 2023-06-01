@@ -1,0 +1,212 @@
+body {
+    margin: 0;
+    font-family: "gg sans","Noto Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginPanel {
+    background-color: #313338;
+    width: 50%;
+    height: 50%;
+    border-radius: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    padding: 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.loginArea {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+}
+
+.welcomeTitle {
+    color: #F2F3F5;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.welcomeSubtitle {
+    color: #B5BAC1;
+    font-size: 16px;
+    font-family: "Times New Roman";
+    margin-top: -2%;
+}
+
+.loginArea form {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    margin-top: 1vw;
+    color: #949BA4;
+    font-size: 14px;
+}
+#email, #password {
+    background-color: #1E1F22;
+    border-radius: 1%;
+    border: 0;
+    height: 5vh;
+    color: #FFF;
+    padding-left: 1vw;
+}
+
+a {
+    margin-top: 0.5vw;
+    text-decoration: none;
+    color: #00A8FC;
+    font-size: 14px;
+    width: 32%;
+}
+
+.loginArea label {
+    color: #B5BAC1;
+    font-size: 12px;
+    font-weight: bolder;
+}
+
+ast {
+    color: #FF0000;
+}
+
+#submit {
+    margin-top: 2vh;
+    height: 5vh;
+    background-color: #5865F2;
+    color: #FFF;
+    border: 0;
+    border-radius: 2%;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+#submit:hover{
+    cursor: pointer;
+}
+
+.qrCode{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.qrCode img {
+    width: 65%;
+    height: 50%;
+    border-radius: 0.5vw;
+}
+
+.qrCode h2 {
+    color: #F2F3F5;
+}
+
+.qrCode p {
+    color: #B5BAC1;
+    font-size: 16px;
+}
+
+@media (max-width: 1000px){
+    #email, #password, #submit{
+        height: 3.5vw;
+    }
+}
+
+@media (max-width: 830px){
+    .loginPanel {
+        width: 90vw;   
+        height: 45vh;
+    }
+    .content {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .qrCode {
+        display: none;
+    }
+
+    .loginArea {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+
+    #email, #password, #submit {
+        height: 5vh;
+    }
+
+    a {
+        width: 100%;
+    }
+}
+
+@media (max-width: 550px){
+    .loginPanel {
+        width: 90vw;   
+        height: 55vh;
+    }
+
+    .content {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    #email, #password, #submit{
+        height: 5vh;
+    }
+
+    a {
+        margin-top: 1.5vw;
+    }
+
+}
+
+
+@media (max-width: 485px){
+    body {
+        background-color: #313338;
+    }
+
+    .loginPanel {
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+    }
+
+    #email, #password, #submit {
+        height: 6vh;
+        width: 90vw;
+    }
+
+    a {
+        width: 100%; 
+    }
+}
+
+@media(min-width: 485px){
+    body {
+        background-image: url('img/background.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+}
