@@ -260,6 +260,9 @@ body {
 }
 
 @media (max-width: 1130px){
+    .slide {
+        height: 25vh;
+    }
     .joinBtn {
         display: none;
     }
@@ -305,6 +308,7 @@ body {
 }
 
 @media (max-width: 783px){
+
     .nav-wrapper-right a {
         display: none;
     }
