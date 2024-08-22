@@ -1,12 +1,18 @@
-var client_id = "9d166366c740411797aa360cd0756e59";
-var client_secret = "d43d1e1b087f4219932cd991122821f8";
-var redirect_uri = "https://www.google.com.br";
+document.addEventListener("DOMContentLoaded", function() {
+  const textElement = document.getElementById("biography-title");
+  const text = textElement.textContent; // Usar textContent para preservar espaços
+  textElement.textContent = ""; // Limpa o texto existente
 
-function Logar(){
-    var scopes = 'user-read-private user-read-email';
-window.location.href = "https://accounts.spotify.com/authorize" +
-  '?response_type=code' +
-  '&client_id=' + client_id +
-  (scopes ? '&scope=' + encodeURIComponent(scopes) : '') +
-  '&redirect_uri=' + encodeURIComponent(redirect_uri);
-};
+  let index = 0;
+  const speed = 150;
+
+  function typeWriter() {
+      if (index < text.length) {
+          textElement.textContent += text[index]; // Usar text[index]
+          index++;
+          setTimeout(typeWriter, speed);
+      }
+  }
+
+  typeWriter();
+});
