@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
   textElement.textContent = ""; // Limpa o texto existente
 
   let index = 0;
-  const speed = 150;
+  const speed = 125;
 
   function typeWriter() {
       if (index < text.length) {
