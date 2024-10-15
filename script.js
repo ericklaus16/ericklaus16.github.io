@@ -1,18 +1,23 @@
-document.addEventListener("DOMContentLoaded", function() {
-  const textElement = document.getElementById("biography-title");
-  const text = textElement.textContent; // Usar textContent para preservar espaços
-  textElement.textContent = ""; // Limpa o texto existente
+document.getElementById('about-me-link').addEventListener('click', function() {
+  document.getElementById('presentation').scrollIntoView({
+      behavior: 'smooth'
+  });
+});
 
-  let index = 0;
-  const speed = 125;
+document.getElementById('project-link').addEventListener('click', function() {
+  document.getElementById('card-container').scrollIntoView({
+      behavior: 'smooth'
+  });
+});
 
-  function typeWriter() {
-      if (index < text.length) {
-          textElement.textContent += text[index]; // Usar text[index]
-          index++;
-          setTimeout(typeWriter, speed);
-      }
-  }
+document.getElementById('projects-button').addEventListener('click', function() {
+  document.getElementById('card-container').scrollIntoView({
+      behavior: 'smooth'
+  });
+});
 
-  typeWriter();
+document.getElementById('contact-link').addEventListener('click', function() {
+  document.getElementById('contact-container').scrollIntoView({
+      behavior: 'smooth'
+  });
 });

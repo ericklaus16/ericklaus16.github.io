@@ -5,27 +5,116 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css"/>
-    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
     <title>Portfolio</title>
 </head>
 <body>
     <div id="container">
-        <div id="header"></div>
-        <div id="photo-area">
-            <img src="https://media.licdn.com/dms/image/v2/D4D03AQFQedYnCEKEBg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1701547197940?e=1729728000&v=beta&t=3fZX0r0C_zY5ys3cahu0dzuAbA68rdhlRRYXtJfLm6E" id="photo"></img>
-            <p id="photo-title"><span style="color: #7127BA;">Olá</span>, me chamo <span style="color: #7127BA;">Eric Klaus</span>!</p>
+        <div id="header">
+            <div id="links">
+                <label id="about-me-link">Sobre mim</label>
+                <label id="project-link">Projetos</label>
+                <label id="contact-link">Contato</label>
+            </div>
         </div>
-        <div id="biography-area">
-            <p id="biography-title">Sou um acadêmico de Ciências da Computação!</p>
-            <p id="biography">Atualmente no 5º período do curso de Ciência da Computação na Universidade Estadual do Oeste do Paraná (UNIOESTE) de Cascavel, tenho me dedicado ao desenvolvimento de habilidades em programação, com ênfase em tecnologias como C, C++, React.js, React Native e PHP. Entretanto, sempre aberto para aprender novas tecnologias.</p>
+        <div id="presentation">
+            <div id="intro">
+                <div id="hello">
+                    <p id="role">DESENVOLVEDOR WEB</p>
+                    <p id="name">Olá, me chamo Eric</p>
+                </div>
+                <p id="description">Atualmente no 6º período do curso de Ciência da Computação na Universidade Estadual do Oeste do Paraná (UNIOESTE) de Cascavel, tenho me dedicado ao desenvolvimento de habilidades em programação, com ênfase em tecnologias como C, C++, React.js e seus frameworks, React Native e PHP. Entretanto, sempre aberto para aprender novas tecnologias.</p>
+                <div id="buttons">
+                    <a id="projects-button">PROJETOS</a>
+                    <a id="linked-in-button" href="https://www.linkedin.com/in/eric-klaus-a40b261b2/" target="_blank">LINKEDIN</a>
+                </div>
+            </div>
+            <img id="picture" src="img/profile_picture.png"/>
         </div>
-        <div id="projects-area">
-            <p id="projects-title">Projetos</p>
+        <div id="card-container">
+            <div id="card">
+                <img id="card-image" src="img/profile_picture.png" alt="Card Image">
+                <div id="card-content">
+                    <h3>HTML | CSS</h3>
+                    <h2>Projeto</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam...</p>
+                </div>
+            </div>
+            <div id="card">
+                <img id="card-image" src="img/profile_picture.png" alt="Card Image">
+                <div id="card-content">
+                    <h3>HTML | CSS</h3>
+                    <h2>Projeto</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam...</p>
+                </div>
+            </div>
+            <div id="card">
+                <img id="card-image" src="img/profile_picture.png" alt="Card Image">
+                <div id="card-content">
+                    <h3>HTML | CSS</h3>
+                    <h2>Projeto</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam...</p>
+                </div>
+            </div>
+            <div id="card">
+                <img id="card-image" src="img/profile_picture.png" alt="Card Image">
+                <div id="card-content">
+                    <h3>HTML | CSS</h3>
+                    <h2>Projeto</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam...</p>
+                </div>
+            </div>
+            <div id="card">
+                <img id="card-image" src="img/profile_picture.png" alt="Card Image">
+                <div id="card-content">
+                    <h3>HTML | CSS</h3>
+                    <h2>Projeto</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam...</p>
+                </div>
+            </div>
+            <div id="card">
+                <img id="card-image" src="img/profile_picture.png" alt="Card Image">
+                <div id="card-content">
+                    <h3>HTML | CSS</h3>
+                    <h2>Projeto</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam...</p>
+                </div>
+            </div>
+        </div>
+        <div id="contact-container">
+            <p id="contact">CONTATO</p>
+            <p id="interest">Se está interessado em trabalhar comigo em seu próximo projeto, não hesite em entrar em contato comigo.</p>
+        
+            <form action="">
+                <label for="name-input">Nome completo <span>*</span></label>
+                <input id="name-input" placeholder="João da Silva" required/>
+
+                <label for="email-input">Endereço de e-mail <span>*</span></label>
+                <input id="email-input" type="email" placeholder="joaodasilva@gmail.com" required/>
+
+                <label for="message-input">Mensagem <span>*</span></label>
+                <textarea id="message-input" placeholder="Digite sua mensagem aqui..."></textarea>
+
+                <input type="submit" value="ENVIAR MENSAGEM" id="submit-form-input"/>
+            </form>
+        </div>
+        <div id="footer">
+            <p>Feito por Eric Klaus</p> 
+            <div id="social-media">
+                <a href="https://github.com/ericklaus16" target="_blank"><img src="img/git.jpeg"/></a>
+                <a href="https://www.instagram.com/erickbms1/" target="_blank"><img src="img/insta.svg"/></a>
+                <a href="https://leetcode.com/u/ericklaus16/" target="_blank"><img src="img/leetcode.png"/></a>
+            </div>
         </div>
     </div>
+    
     <!-- 
     <a href="ericklaus16.github.io/Discord/" target="_blank">Visitar clone da Landing Page do Discord</a><br/>
     <a href="https://ericklaus16.github.io/starbucks/" target="_blank">Visitar clone da Landing Page do Starbucks</a><br/>
     -->
+    <script src="script.js"></script>
 </body>
 </html>
